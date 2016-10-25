@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <title>CheckerBoard</title>
+  </head>
+<body>
+  <canvas id="mycanvas"></canvas>
+  <script>
+    var x=0;
+    var y=0;
+    var maxX=100;
+    var maxY=100;
+    
+    var canvas= document.getElementById
+    ("myCanvas");
+    
+    canvas.width= maxX;
+    canvas.height= maxY;
+    canvas.style.border="1px solid black";
+    var ctx= canvas.getContext("2d");
+    
+   for(x, x<=maxX,x=x+maxX /10){
+    ctx.moveTo(x,0);
+    ctx.lineTo(x,maxY);
+    ctx.stroke();
+    ctx.strokeStyle = "red";
+   }
+   
+   for(y;y<=maxY;y=y+maxY/10){
+     ctx.moveTo(0,y);
+     ctx.lineTo(maxX,y);
+     ctx.stroke();
+     
+   }
+   
+   
+    
+
+    
+     </script>
+  </body>
+</html>

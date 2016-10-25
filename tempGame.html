@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Temp Controls</title>
+		<style type="text/css">
+			html {
+				cursor: default;
+				/*To prevent the user from selecting anything accidently*/
+				-webkit-user-select: none;  /* Chrome all / Safari all */
+				-moz-user-select: none;     /* Firefox all */
+				-ms-user-select: none;      /* IE 10+ */
+				user-select: none;          /* Likely future */
+			}
+			body {
+				background-color: #ccbfa5;
+			}
+			#thermostat {
+				height: 200px;
+				width: 400px;
+				border: 2px solid black;
+				border-radius: 10%;
+				margin: auto;
+				background-color: #665F52;
+				margin-top: 50px;
+			}
+			#display {
+				height: 135px;
+				width: 275px;
+				margin-top: 30px;
+				margin-left: 30px;
+				border: 2px solid black;
+				border-radius: 10%;
+				position: relative;
+				float: left;
+				background-color: #D6CBB7;
+			}
+			#currentTemp {
+				height: 100px;
+				width: 167px;
+				border: 2px solid black;
+				border-radius: 10%;
+				margin: 10px;
+				float: left;
+				background-color: #EDF6FF;
+			}
+			#currentTemp > span {
+				font-size: 40pt;
+				float: right;
+				margin-right: 35px;
+				margin-top: 20px;
+			}
+			#heatCold {
+				clear: both;
+				margin-left: 60px;
+			}
+			#progTemp {
+				height: 33px;
+				width: 56px;
+				border: 2px solid black;
+				border-radius: 10%;
+				background-color: #EDF6FF;
+				float: left;
+				padding-right: 5px;
+			}
+			#overrideTemp {
+				
+				height: 33px;
+				width: 56px;
+				border: 2px solid black;
+				border-radius: 10%;
+				background-color: #EDF6FF;
+				float: left;
+				padding-right: 5px;
+			}
+
+			#progTemp > span, #overrideTemp > span {
+				font-size: 20pt;
+				float: right;
+
+			}
+			.title {
+				margin: 2px;
+			}
+			#incTempBtn {
+				margin-top: 40px;
+				margin-left: 10px;
+				height: 33px;
+				width: 56px;
+				border: 2px solid black;
+				border-radius: 10%;
+				position: relative;
+				float: left;
+				background-color: #FF4C4C;
+				box-shadow: 2px 2px 1px #992D2D;
+			}
+			#decTempBtn {
+				margin-top: 30px;
+				margin-left: 10px;
+				height: 33px;
+				width: 56px;
+				border: 2px solid black;
+				border-radius: 10%;
+				position: relative;
+				float: left;
+				background-color: #4C4CFF;
+				box-shadow: 2px 2px 1px #26267F;
+			}
+			#incTempBtn:hover{
+				background-color: #E54444;
+			}
+			#decTempBtn:hover{
+				background-color: #3C3CCC;
+
+			}
+			#incTempBtn:active,#decTempBtn:active {
+				box-shadow: 0px 0px 0px black;
+				transform: translateY(2px);
+				transform: translateX(2px);
+			}
+			#decTempBtn span, #incTempBtn span {
+				margin: 20px;
+				font-size: 20pt;
+			}
+			#orerrideTemp > span {margin-bottom: 10px;}
+		</style>
+	</head>
+	<body>
+		<div id = "thermostat">
+			<div id="display">
+				<div id = "currentTemp">
+					<span id "currentTempText"></span></span> 00&deg</span>
+					<p id="heatCold">Heating</p>
+				</div>
+				<div class="title">Prog:</div>
+				<div id="progTemp">
+					<span>00&deg</span>
+				</div>
+				<div class="title">Override:</div>
+				<div id="overrideTemp">
+					<span>00&deg</span>
+				</div>
+			</div>
+
+			<div id = "incTempBtn" onClick= "decTemp()">
+				<span>↑</span>
+			</div>
+			<div id = "decTempBtn">
+				<span>↓</span>
+			</div>
+		</div>
+		<h1>Temperature Project</h1>
+		<p>
+			You are tasked with the following:
+			</br>
+		
+		</p>
+		
+		<script>
+
+  //var startUp = function(){
+// var currentTemp=0;
+// var progTemp=o;
+// varcheck=true;
+// while (check){
+// currentTemp=parseInt(prompt("what\'s the current temp?"));
+// progTemp =parseInt(prompt("what\'s the programed temp?"));
+// if((currentTemp>45)||(currentTemp< 95)||(progTemp>45)
+
+  var progTemp =75
+  var overrideTemp = progTemp;
+  document.getElementById("heatCold").innerHtML= "cooling";
+  document.getElementById("currentTemp").innerHtML= 70;
+  document.getElementById("progTemp").innerHtML= 75;
+  document.getElementById("overrideTemp").innerHtML= 80;
+
+
+
+    overrideTemp++;
+    document.getElementById("overrideTemp").innerHtml=overrideTem
+  
+  var decTemp=function(){
+    overrideTemp--;
+    document.getElementById("overrideTemp").innerHtml=overrideTemp;
+  }
+  
+ document.getElementById("").innerHtml=
+  document.getElementById("").innerHtml=
+  document.getElementById("").innerHtml=
+  document.getElementById("").innerHtml=
+  
+  
+    </script>
+	</body>
+</html>
